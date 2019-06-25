@@ -31,7 +31,6 @@ class rootRoutes extends React.Component {
   }
 
   render() {
-    console.log('TCL: rootRoutes -> render -> this.props', this.props);
     return get(this.props, 'isLogged', false)
       ? userRoutes()
       : universalRoutes();

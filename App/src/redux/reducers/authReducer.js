@@ -84,7 +84,6 @@ export const signin = (email, password) => dispatch => {
   dispatch(request());
   confirmUser({ email, password })
     .then(res => {
-      console.log('TCL: res.data', res.data);
       if (res.data.type === AUTHENTICATION_TYPES.SUCCESS)
         dispatch(login(res.data.token, res.data.userData));
       else if (res.data.type === AUTHENTICATION_TYPES.FAILURE)

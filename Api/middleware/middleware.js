@@ -4,7 +4,6 @@ const startsWith = require('lodash/startsWith');
 
 const checkToken = (req, res, next) => {
   let token = req.headers['x-access-token'] || req.headers['authorization'];
-  console.log('TCL: checkToken -> req.headers', req.headers);
   if (startsWith(token, 'Bearer ')) {
     // Remove Bearer from string
     token = token.slice(7, token.length);

@@ -8,5 +8,4 @@ module.exports = {
   }
   // require('dotenv').config();
   // const secret = process.env.SECRET || 'some other secret as default';
-  // console.log('TCL: secret', secret);
 };
