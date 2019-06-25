@@ -22,6 +22,19 @@
     "build": "webpack --config=webpack.config.js --env.development=true",
     "build-prod": "webpack --config=webpack.config.js --env.production=true"
   },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "starter",
+    "boilerplate",
+    "authToken",
+    "auth",
+    "token",
+    "bcrypt",
+    "babel",
+    "react-router"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
