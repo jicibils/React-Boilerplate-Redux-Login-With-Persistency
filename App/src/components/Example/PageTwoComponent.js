@@ -1,10 +1,13 @@
 import React from 'react';
+import Wip from 'components/Wip/WipComponent';
 
 class PageTwoComponent extends React.Component {
   render() {
     return (
       <div style={{ marginTop: 150 }}>
-        <h1>Page Two</h1>
+        <div>
+          <Wip />
+        </div>
       </div>
     );
   }

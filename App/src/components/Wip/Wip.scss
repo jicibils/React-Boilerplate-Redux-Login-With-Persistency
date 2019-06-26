@@ -1,0 +1,29 @@
+.Wip {
+  text-align: center;
+}
+
+.Wip-logo {
+  animation: Wip-logo-spin infinite 60s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Wip-header {
+  background-color: white;
+  //   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes Wip-logo-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(5000deg);
+  }
+}

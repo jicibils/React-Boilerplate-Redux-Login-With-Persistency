@@ -1,17 +1,13 @@
 import React from 'react';
+import Wip from 'components/Wip/WipComponent';
 
 class PageOneComponent extends React.Component {
   render() {
     return (
       <div style={{ marginTop: 150 }}>
-        <h1>Page One</h1>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <h5>{this.props.message}</h5>
+        <div>
+          <Wip />
+        </div>
       </div>
     );
   }
