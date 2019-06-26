@@ -15,7 +15,7 @@ const initialState = {
   isFetching: false,
   user: null,
   token: null,
-  isLogged: false,
+  isAuthed: false,
   errorMessage: ''
 };
 
@@ -27,11 +27,11 @@ const AuthReducer = (state = initialState, action) => {
         user: get(action, 'payload.user', {})
       };
     case REQUEST:
-      return { ...state, isFetching: true, isLogged: false };
+      return { ...state, isFetching: true, isAuthed: false };
     case LOGIN:
       return {
         ...state,
-        isLogged: true,
+        isAuthed: true,
         token: action.payload.token,
         user: action.payload.user,
         errorMessage: '',
@@ -40,7 +40,7 @@ const AuthReducer = (state = initialState, action) => {
     case LOGOUT:
       return {
         ...state,
-        isLogged: false,
+        isAuthed: false,
         token: null,
         user: null,
         isFetching: false,
